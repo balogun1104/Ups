@@ -4,7 +4,7 @@ import React from 'react'
 const OrdersScreen = () => {
   return (
     <View>
-      <Text>OrdersScreen</Text>
+      <Text>This is the order screen</Text>
     </View>
   )
 }
