@@ -6,12 +6,12 @@ import OrdersScreen from "../screens/OrdersScreen";
 import { useNavigation } from "@react-navigation/native";
 import { Icon } from "@rneui/themed";
 
-export type TabStacParamList = {
+export type TabStackParamList = {
   Customers: undefined;
   Orders: undefined;
 };
 
-const Tab = createBottomTabNavigator<TabStacParamList>();
+const Tab = createBottomTabNavigator<TabStackParamList>();
 
 const TabNavigator = () => {
   const navigation = useNavigation();
