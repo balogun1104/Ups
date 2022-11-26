@@ -1,7 +1,7 @@
-import { gql, useQuery } from '@apollo/client';
+import { gql, useQuery } from "@apollo/client";
 
 export const GET_CUSTOMERS = gql`
-  query GetCustomers   {
+  query GetCustomers {
     getCustomers {
       name
       value {
@@ -13,7 +13,7 @@ export const GET_CUSTOMERS = gql`
 `;
 
 export const GET_ORDERS = gql`
-  query GetOrders   {
+  query GetOrders {
     getOrders {
       name
       value {
