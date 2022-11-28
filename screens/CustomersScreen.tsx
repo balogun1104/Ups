@@ -50,11 +50,13 @@ const CustomersScreen = () => {
         onChangeText={setInput}
         containerStyle={tws("bg-white pt-5 pb-0 px-10")}
       />
-      {data?.getCustomers.map(
-        ({ name: ID, value: { email, name } }: CustomerResponse) => (
-          <CustomerCard key={ID} name={name} email={email} userId={ID} />
+      {data?.getCustomers
+        ?.filter((customer: CustomerList) =>
+          customer.value.name.includes(input)
         )
-      )}
+        .map(({ name: ID, value: { email, name } }: CustomerResponse) => (
+          <CustomerCard key={ID} name={name} email={email} userId={ID} />
+        ))}
     </ScrollView>
   );
 };
