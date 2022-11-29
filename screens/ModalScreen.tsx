@@ -46,6 +46,7 @@ const ModalScreen = () => {
       <FlatList
         data={orders}
         renderItem={({ item: order }) => <DeliveryCard order={order} />}
+        keyExtractor={(item: Order, index) => item.trackingId}
       />
     </View>
   );
