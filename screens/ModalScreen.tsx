@@ -13,7 +13,7 @@ import { TabStackParamList } from "../navigator/TabNavigator";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../navigator/RootNavigator";
 import useCustomerOrders from "../hooks/useCustomerOrders";
-import DeliveryCard from "../components/DeliveryCard";
+import DiliveryCard from "../components/DiliveryCard";
 
 type ModalScreenNavigationProp = CompositeNavigationProp<
   BottomTabNavigationProp<TabStackParamList>,
@@ -39,14 +39,15 @@ const ModalScreen = () => {
       <View>
         <View>
           <Text>{name}</Text>
-          <Text>{userId}</Text>
+          <Text>diliveries</Text>
         </View>
       </View>
 
       <FlatList
+        contentContainerStyle={{ paddingBottom: 200 }}
         data={orders}
-        renderItem={({ item: order }) => <DeliveryCard order={order} />}
-        keyExtractor={(item: Order, index) => item.trackingId}
+        keyExtractor={(order) => order.Address}
+        renderItem={({ item: order }) => <DiliveryCard order={order} />}
       />
     </View>
   );

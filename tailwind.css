@@ -26,12 +26,34 @@
   z-index: 10
 }
 
+.m-0 {
+  margin: 0px
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto
+}
+
 .mb-5 {
   margin-bottom: 1.25rem
 }
 
 .ml-auto {
   margin-left: auto
+}
+
+.-mt-3 {
+  margin-top: -0.75rem
+}
+
+.mt-5 {
+  margin-top: 1.25rem
 }
 
 .block {
@@ -62,12 +84,20 @@
   flex-direction: row
 }
 
+.items-start {
+  align-items: flex-start
+}
+
 .items-center {
   align-items: center
 }
 
 .justify-end {
   justify-content: flex-end
+}
+
+.justify-center {
+  justify-content: center
 }
 
 .justify-between {
@@ -78,8 +108,16 @@
   border-radius: 0.5rem
 }
 
+.rounded-none {
+  border-radius: 0px
+}
+
 .border {
   border-width: 1px
+}
+
+.border-b {
+  border-bottom-width: 1px
 }
 
 .bg-white {
@@ -96,12 +134,25 @@
   padding-right: 2.5rem
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem
+}
+
 .pt-5 {
   padding-top: 1.25rem
 }
 
 .pb-0 {
   padding-bottom: 0px
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem
+}
+
+.text-center {
+  text-align: center
 }
 
 .text-2xl {
@@ -114,6 +165,26 @@
   line-height: 1.25rem
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+
 .font-bold {
   font-weight: 700
 }
@@ -124,4 +195,13 @@
 
 .capitalize {
   text-transform: capitalize
+}
+
+.italic {
+  font-style: italic
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
 }
