@@ -1,4 +1,5 @@
-<h1>ups-clone-2.0</h1>
+<h1>ups-clone</h1>
+<h4> Built By Balogun-Razak</h4>
 </ul>
 <h3>Built using React Native, Typescript, Firebase, GraphQL, Stepzen & Tailwind CSS</h3>
 <h1>To run the app:</h1>
