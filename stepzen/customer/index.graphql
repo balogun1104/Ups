@@ -1,3 +1,5 @@
+
+
 type Customer {
   email: String
   name: String
@@ -11,12 +13,12 @@ type CustomerList {
 type Query {
   getCustomerById(id: ID!): Customer
     @rest(
-      endpoint: "https://ups-delivery-a889a-default-rtdb.firebaseio.com/customers/$id .json"
+      endpoint: "https://ups-clone-bcff4-default-rtdb.asia-southeast1.firebasedatabase.app/customers/$id.json"
     )
 
   getCustomers: [CustomerList]
     @rest(
-      endpoint: "https://ups-delivery-a889a-default-rtdb.firebaseio.com/customers.json"
-       transforms: [{ pathpattern: [], editor: "objectToArray "}]
+      endpoint: "https://ups-clone-bcff4-default-rtdb.asia-southeast1.firebasedatabase.app/customers.json"
+      transforms: [{ pathpattern: [], editor: "objectToArray" }]
     )
 }
